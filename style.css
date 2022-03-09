@@ -1,0 +1,281 @@
+:root{
+    --bg:#DCF7B8;
+    --darkGreen:#0C3214;
+    --brown:#291707; 
+}
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* ScrollBar_____________________________ */
+html {
+    --scrollbarBG: #DCF7B8;
+    --thumbBG: #0C3214;
+  }
+  body::-webkit-scrollbar {
+    width: 8px;
+  
+  }
+  body {
+      background-color:rgb(0, 0, 0);
+    scrollbar-width:thick;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 1px solid var(--scrollbarBG);
+  }
+  /* ______________________________________________ */
+body{
+    background-color: var(--bg);
+}
+nav{
+    z-index: 999;
+    border-top: 20px solid var(--darkGreen);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+nav .logo{
+    background-color: var(--darkGreen);
+    margin-left: 5%;
+    margin-top: -2px;
+    width: 120px;
+    height: 125px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img{width: 50px;}
+.main{
+    background-color: #AAD178;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.main .text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 5%;
+}
+.main .media{
+    opacity: 0.8;
+    width: 50%;
+}
+.media source{
+    box-sizing: border-box;
+}
+.media video{
+    border-radius: 35px;
+    margin: 3%;
+    height: 94vh;
+}
+.text h2{
+    font-size: 45px;
+}
+.text h1{
+    font-size: 35px;
+}
+.text p{font-size: 25px;}
+/* ---- Cards Section---- */
+.cards{
+    padding: 10vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin: 0 50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0C3214;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 300px;
+    height: 350px;
+}
+.card h2{font-weight: 400;}
+.card p{font-size: 15px; padding: 0 20px;}
+.card svg{
+    margin: 40px 0;
+    width: 100px;
+    height: 100px;
+}
+.cardAfter{
+    margin: auto;
+    width: 90%;
+    color: var(--bg);
+    border: 1px solid #0c3214b2;
+}
+/* More  Info Section */
+.mid h2{font-size: 35px;}
+.mid p{font-size: 20px;}
+.mid .row{
+    width: 90%;
+    margin: 5vh auto;
+    justify-content: space-between;
+    border-radius: 25px;
+    height: 40vh;
+    display: flex;
+}
+.mid .left{
+    background-color: #cde7aa;;
+    width: 50%;
+    border-radius: 25px;
+}
+.mid .right{
+    width: 50%;
+    margin: 5%;
+    margin-right: 0;
+    margin-top: 0;
+}
+.mid .rowSec{
+    width: 90%;
+    margin: 5vh auto;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 25px;
+    height: 40vh;
+    display: flex;
+}
+.rowSec .right{
+    margin-left: 0;
+    margin-right: 5%;
+}
+/* --Contact Section-- */
+.contactBox{
+    margin: 10vh auto;
+    height: 30vh;
+    width: 90%;
+    border-radius: 25px;
+    background: url(img/hay.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.contactBox .details{
+    background-color: #0C3214;
+    padding: 3vh;
+    margin: 5vh;
+    width: 90%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.contactBox a{
+    width: 30%;
+    font-size: 20px;
+    color: var(--bg);
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.contactBox a:hover{
+    color: white;
+    font-size: 20.5px;
+}
+/* Footer Part */
+footer{
+    border-top-right-radius: 20px;
+    height: 50vh;
+    background-color: #081B0A;
+}
+footer .row{
+    width: 96%;
+    margin: 0 auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .left{
+    color: var(--bg);
+}
+footer .left .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    margin-bottom: 25px;
+    background-color: var(--bg);
+}
+footer .left h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+footer .left h4{font-weight: 400; font-size: 20px;}
+footer .row .right{
+    width: 450px;
+    height: 225px;
+}
+.row .right iframe{
+    border-radius: 16px;
+}
+.altfooter{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerdivider{
+    border: 1px solid #0f3a18;
+    width: 90%;
+    margin: 0 auto;
+}
+.altfooter img{
+    margin-top: 15px;
+    width: 30px;
+}
+.altfooter address{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #dcf7b8b4;
+}
+address span{
+    font-size: 12px;
+}
+span a{text-decoration: none;color: unset;}
+
+@media only screen and (max-width:800px) {
+    html{width: 100vw; overflow-x: hidden;}
+    nav{width: 100vw;}
+    nav .logo{width: 70px;height: 70px; float: right; margin-right: 5%;}
+    .main{flex-direction: column-reverse; height: auto;}
+    .media video{height: 40vh; margin: 0; border-radius: 0;}
+    .main .text{width: 95%;}
+    .text h2{font-size: 25px;}
+    .text h1{font-size: 18px;}
+    .text p{font-size: 16px;}
+    .cards{flex-direction: column; align-items: center;padding: 0;}
+    .card svg{width: 80px; height: 80px; margin: 20px;}
+    .card{height: 280px;margin: 20px 0;}
+    .card p{font-size: 16px;}
+    .mid h2{font-size: 25px;} .mid p{font-size: 16px;}
+    .mid .row{flex-direction: column; align-items: center; height: auto;}
+    .mid .left{width: 300px; height: 180px; margin-bottom: 20px;} .mid .right{width: 90%;}
+    .mid .rowSec{flex-direction: column; align-items: center; height: auto;}
+    .rowSec .right{margin-left: 5%;}
+    .contactBox{height: 35vh;} .contactBox a{width: 100%; padding: 10px 0;}
+    .contactBox .details{width: 95%; flex-direction: column; border-radius: 15px;margin: 1vh;padding: 5vh 0vh;}
+    footer{height: auto;} footer .row{flex-direction: column;} footer iframe{width: 90vw; height: 180px; margin-top: 20px;}
+    footer .row .right{width: 90vw !important;}
+    footer .left h2{font-size: 27px;} footer .left h4{font-size: 18px;}
+}
